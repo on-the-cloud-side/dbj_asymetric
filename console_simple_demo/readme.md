@@ -1,4 +1,1 @@
-# WIP 
-## Look Elsewhere
-
-Two interlocutors are two actors in one conversation.
+# Two interlocutors are two actors in one conversation.
