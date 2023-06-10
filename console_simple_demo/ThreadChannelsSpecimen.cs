@@ -51,6 +51,9 @@ class ThreadChannelsSpecimen
                 while (channel.Reader.TryRead(out byte[]? item))
                 {
                     var clear_text_message_arrived_ = interlocutor_.DecryptFromInterlocutor(payload_string(item));
+                    // never ever do this, especialy when logging
+                    // but Serilog is not building up a memory consumption when logging
+                    // and this is just a demo ;)
                     info($"Message Arrived translated to a clear text: {clear_text_message_arrived_}");
                 }
             }
